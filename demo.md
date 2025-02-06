@@ -1,5 +1,12 @@
+# Getting Started with the ScalableCS Package
 
-# Introduction
+### Kenichi Shimizu
+
+### 2024-09-10
+
+
+ 
+## Introduction
 
 This vignette discusses the basics of the scalable estimation of consideration set models the **ScalableCS** package in Matlab. The background article for it is [Chib and Shimizu (2025), "Scalable Estimation of Multinomial Response Models with Random Consideration Sets
 "](https://arxiv.org/pdf/2308.12470).
