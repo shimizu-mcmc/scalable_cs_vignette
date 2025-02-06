@@ -1,7 +1,7 @@
 
 # Introduction
 
-This vignette discusses the basics of using Difference-in-Differences (DiD) designs to identify and estimate the average effect of participating in a treatment with a particular focus on tools from the **did** package. The background article for it is [Chib and Shimizu (2025), "Scalable Estimation of Multinomial Response Models with Random Consideration Sets
+This vignette discusses the basics of the scalable estimation of consideration set models the **ScalableCS** package in Matlab. The background article for it is [Chib and Shimizu (2025), "Scalable Estimation of Multinomial Response Models with Random Consideration Sets
 "](https://arxiv.org/pdf/2308.12470).
 
 
