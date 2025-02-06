@@ -10,3 +10,11 @@ This vignette discusses the basics of using Difference-in-Differences (DiD) desi
 * Treatment effect estimates coming from the **did** package do not suffer from any of the drawbacks associated with two-way fixed effects regressions or event study regressions when there are multiple periods / variation in treatment timing
 
 * The **did** package can deliver disaggregated *group-time average treatment effects* as well as event-study type estimates (treatment effects parameters corresponding to different lengths of exposure to the treatment) and overall treatment effect estimates.a
+
+# Examples with simulated data
+
+Let's start with a really simple example with simulated data.  Here, there are going to be 4 time periods.  There are 4000 units in the treated group that are randomly (with equal probability) assigned to first participate in the treatment (a *group*) in each time period.  And there are 4000 ``never treated'' units.  The data generating process for untreated potential outcomes
+
+$$
+  Y_{it}(0) = \theta_t + \eta_i + X_i'\beta_t + v_{it}
+$$
