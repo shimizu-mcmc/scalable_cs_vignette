@@ -30,7 +30,8 @@ $$
 $$
 
 
-* The dataset contains two matrices: Y (J by nT) and X (JnT by dx). The X matrix contains 
+The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
+* The X matrix contains information on covariates x_{ijt}. For example, it may include price, display, and feature (dx=3). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
 (i,t) | price | display | feature
 --- | --- | --- | --- 
