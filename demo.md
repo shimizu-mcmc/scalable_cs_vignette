@@ -29,7 +29,8 @@ $$
   Y_{it}(0) = \theta_t + \eta_i + X_i'\beta_t + v_{it}
 $$
 
-
+* example with J=4.
+  
 The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
 * The X matrix contains information on covariates $x_{ijt}$. For example, it may include price, display, and feature (dx=3). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
@@ -43,7 +44,11 @@ The dataset contains two matrices: Y (J by nT) and X (JnT by dx).
 : | : | : | :  
 
 
+* Show posterior probs over the 15 points with T=5. Talk about the sparsity. 
 
+
+
+* Show a table 
 
 
 
