@@ -28,3 +28,10 @@ Let's start with a really simple example with simulated data.  Here, there are g
 $$
   Y_{it}(0) = \theta_t + \eta_i + X_i'\beta_t + v_{it}
 $$
+
+
+* Show data here
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
