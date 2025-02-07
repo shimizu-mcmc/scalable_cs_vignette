@@ -32,9 +32,10 @@ $$
 
 * The dataset contains two matrices: Y (J by nT) and X (JnT by dx). The X matrix contains 
 
-Attempt | #1 | #2 | #3 | #4 
---- | --- | --- | --- |--- 
-Seconds | 301 | 283 | 290 | 286 
+(i,t) | price | display | feature
+--- | --- | --- | --- 
+(1,1) | 301 | 283 | 290  
+(1,2) | 301 | 283 | 290  
 
 
 
