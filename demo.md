@@ -23,7 +23,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 # Examples with simulated data
 
-Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^J-1=15$ possible consideration sets $\pi^{\ast}=\{ \Pi_c^*: c=1,... ,15 \}$.  $$e^{-\frac{t}{RC}}$$
+Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^J-1=15$ possible consideration sets $\pi^{\ast}=\{ \Pi_c^{\ast} c=1,... ,15 \}$.  $$e^{-\frac{t}{RC}}$$
 
 
 $$
