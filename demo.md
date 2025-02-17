@@ -23,7 +23,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 # Examples with simulated data
 
-Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^{J}-1=15$ possible consideration sets $\pi^{\ast}=\\{\pi_c^{\ast}: c=1,... ,15\\}$.  
+Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^{J}-1=15$ possible consideration sets $\pi^{\ast}=\\{\pi_c^{\ast}: c=1,... ,15\\}$.  We first fix the data-generating value of the distribution $\pi^{\ast}$ of consideration sets. 
 
 $$
  Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
@@ -35,10 +35,11 @@ $$
  V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt},
 $$
 
-and $x_{ijt} \sim N(0,1)$
+and $x_{ijt} \sim N(0,1)$. 
 
-  
-The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
+# Data structure
+
+The package requires a certain structure of the dataset. The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
 * The X matrix contains information on covariates $x_{ijt}$. For example, it may include price, display, and feature (dx=3). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
 (i,t) | price | display | feature
