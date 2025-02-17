@@ -37,6 +37,9 @@ $$
 
 and $x_{ijt} \sim N(0,1)$. 
 
+
+* I want to show the clustering ... 
+
 # Data structure
 
 The package requires a certain structure of the dataset. The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
