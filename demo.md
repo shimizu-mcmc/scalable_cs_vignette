@@ -28,7 +28,7 @@ Let's start with a really simple example with simulated data.  Here, there are g
 $$
  Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i\ell t}}
 $$
-
+where
 $$
  V_{ijt}=\delta^{\ast}_j+\beta^{\ast}
 $$
