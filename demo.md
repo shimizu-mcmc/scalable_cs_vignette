@@ -27,7 +27,7 @@ Let's start with a really simple example with simulated data.  Here, there are g
 
 
 $$
-  Y_{it}(0) = \theta_t + \eta_i + X_i'\beta_t + v_{it}
+ V_{ijt}=\delta^{\ast}+\beta^{\ast}
 $$
 
 * example with J=4.
