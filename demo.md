@@ -30,9 +30,9 @@ $$
 $$
 where
 $$
- V_{ijt}=\delta^{\ast}_j+\beta^{\ast}
+ V_{ijt}=\delta^{\ast}_j+\beta^{\ast} x_{ijt}, j=1,...,J,
 $$
-
+and $x_{ijt}\sim N(0,1)$
 * example with J=4.
   
 The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
