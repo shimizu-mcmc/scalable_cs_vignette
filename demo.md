@@ -23,7 +23,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 # Examples with simulated data
 
-Let's start with a really simple example with simulated data.  Here, there are going to be 4 time periods.  There are 4000 units in the treated group that are randomly (with equal probability) assigned to first participate in the treatment (a *group*) in each time period.  And there are 4000 ``never treated'' units.  The data generating process for untreated potential outcomes
+Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^J-1=15$ possible consideration sets $\pi^*=\{ \pi_c^*: c=1,\ldots,15 \}$. 
 
 $$
   Y_{it}(0) = \theta_t + \eta_i + X_i'\beta_t + v_{it}
