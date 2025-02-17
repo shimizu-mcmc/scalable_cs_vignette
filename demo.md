@@ -32,7 +32,7 @@ $$
 where
 
 $$
- V_{ijt}=\delta^{\ast}_j+\beta^{\ast} x_{ijt},
+ V_{ijt}=\delta^{\ast}_j+\beta^{\ast}x_{ijt}
 $$
 
 and $x_{ijt} \sim N(0,1)$
