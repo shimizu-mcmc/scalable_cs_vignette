@@ -26,13 +26,13 @@ This vignette discusses the basics of the scalable estimation of consideration s
 Let's start with a really simple example with simulated data.  Here, there are going to be $J=4$ alternatives. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^{J}-1=15$ possible consideration sets $\pi^{\ast}=\\{\pi_c^{\ast}: c=1,... ,15\\}$.  
 
 $$
- Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}}
+ Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
 $$
 
 where
 
 $$
- V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt}
+ V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt},
 $$
 
 and $x_{ijt} \sim N(0,1)$
