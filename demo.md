@@ -30,10 +30,10 @@ $$
 $$
 where
 $$
- V_{ijt}=\delta^{\ast}_j+\beta^{\ast} x_{ijt}, j=1,...,J,
+ V_{ijt}=\delta^{\ast}_j+\beta^{\ast} x_{ijt},
 $$
-and $x_{ijt}\sim N(0,1)$
-* example with J=4.
+and $x_{ijt} \sim N(0,1)$
+
   
 The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
 * The X matrix contains information on covariates $x_{ijt}$. For example, it may include price, display, and feature (dx=3). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
