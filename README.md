@@ -40,6 +40,11 @@ $$
  Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
 $$
 
+where
+
+$$
+ V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt},
+$$
 
   
 # Data structure
