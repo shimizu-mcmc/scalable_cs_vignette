@@ -50,7 +50,7 @@ where
 ### Distribution of consideration sets
 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
-* Note that its support has $2^{J}-1$ points, and direct estimation such as simulated MLE or MCMC face a curse of dimensionality as $J$ increases. 
+* Note that its support has $2^{J}-1$ points, and a direct estimation based on simulated MLE or MCMC faces a curse of dimensionality as $J$ increases. 
 * Our method offers a scalable approach. 
 
   
