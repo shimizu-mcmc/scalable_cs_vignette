@@ -63,18 +63,18 @@ where
 * For example, it may include price, display, and feature ($dx=3$).
 * Suppose $J=3$. The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
-Alternative | Time | price | display | feature
---- | --- | --- | ---  | --- 
-1 | 1 | 283 | 290   | --- 
-2 | 1 | 283 | 290   | --- 
-3 | 1 | 283 | 290   | --- 
-1 | 2 | 283 | 290   | --- 
-2 | 2 | 283 | 290   | --- 
-3 | 2 | 283 | 290   | --- 
-1 | 3 | 283 | 290   | --- 
-2 | 3 | 283 | 290   | --- 
-3 | 3 | 283 | 290   | --- 
-: | : | : | :  | :  
+Unit | Alternative | Time | price | display | feature
+--- | --- | --- | ---  | --- | --- 
+1 | 1 | 1 | 283 | 290   | --- | --- 
+1 | 2 | 1 | 283 | 290   | --- | --- 
+1 | 3 | 1 | 283 | 290   | --- | --- 
+1 | 1 | 2 | 283 | 290   | --- | --- 
+1 | 2 | 2 | 283 | 290   | --- | --- 
+1 | 3 | 2 | 283 | 290   | --- | --- 
+1 | 1 | 3 | 283 | 290   | --- | --- 
+1 | 2 | 3 | 283 | 290   | --- | --- 
+1 | 3 | 3 | 283 | 290   | --- | --- 
+: | : | : | :  | :  | :  
 
 
 ### The response matrix   
