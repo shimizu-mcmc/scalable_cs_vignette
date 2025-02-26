@@ -72,6 +72,20 @@ where
 
 
 
+
+
+
+
+
+
+* To do next
+  + Reduce n in the replication data (n=100)
+  + Estimate the model.
+  + Show the following
+    - Posterior means, INEF
+    - Similarity matrix
+    - Elasticity (under MNL_RC and MNL_R)
+  
 # Examples with simulated data
 
 Let's start with a really simple example with simulated data. We generate a synthetic panel data consisting of $n=100$ units each observed for $T$ periods.  Here, there are going to be $J=4$ options. Note that in this small $J$ case, it is possible to enumerate and visualize all the $2^{J}-1=15$ possible consideration sets $\pi^{\ast}=\\{\pi_c^{\ast}: c=1,... ,15\\}$.  We first fix the data-generating value of the distribution $\pi^{\ast}$ of consideration sets as follows. $\pi^{\ast}\\{ 1,2\\}=\pi^{\ast}\\{ 3,4\\}=0.25$. The first two options and the last two have large consideration probabilities when considered together. For example, one can think of the first two corresponding to 'vegetarian' options and the last two being 'non-vegetarian.' The other consideration sets are assigned the same small probability of 0.0385. This induces dependence in consideration over the 4 options. Given the simulated consideration sets $\mathcal{C_i}\sim \pi^{\ast}$ for $i=1,...,n$, the responses are simulated from the following multinomial logit model.
