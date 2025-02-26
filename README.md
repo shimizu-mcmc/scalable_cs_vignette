@@ -20,16 +20,18 @@ This vignette discusses the basics of the scalable estimation of consideration s
 * The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sesitivity with respect to covariates. 
 
 # Dimensions
-- $J$ = the number of alternatives (brands, products, etc)
-- $n$ = the number of units (consumers, households, etc)
+- $J$ = the number of alternatives (brands, products, etc).
+- $n$ = the number of units (consumers, households, etc).
 - Each unit is observed for $T_i$ periods. $nT$ denotes the summation $\sum_i T_i$.
-- $dx$ = the number of covariates with fixed effects/slopes
-- $dz$ = the number of covariates with random effects/slopes
+- $dx$ = the number of covariates with fixed effects/slopes.
+- $dz$ = the number of covariates with random effects/slopes.
 
   
 # Data structure
+* The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 
-The package requires a certain structure of the dataset. The dataset contains two matrices: Y (J by nT) and X (JnT by dx). 
+* The dataset should contain two matrices: Y (J by nT) and X (JnT by dx).
+* 
 * The X matrix contains information on covariates $x_{ijt}$. For example, it may include price, display, and feature (dx=3). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
 (i,t) | price | display | feature
