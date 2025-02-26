@@ -13,13 +13,11 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 
 
-* The **did** package allows for multiple periods and variation in treatment timing
+* The **ScalableCS** package allows for estimation of multinomial logit model with latent consideration sets.
 
-* The **did** package allows the parallel trends assumption to hold conditional on covariates
+* The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives. 
 
-* Treatment effect estimates coming from the **did** package do not suffer from any of the drawbacks associated with two-way fixed effects regressions or event study regressions when there are multiple periods / variation in treatment timing
-
-* The **did** package can deliver disaggregated *group-time average treatment effects* as well as event-study type estimates (treatment effects parameters corresponding to different lengths of exposure to the treatment) and overall treatment effect estimates.a
+* The **did** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sesitivity with respect to covariates. 
 
 # Examples with simulated data
 
