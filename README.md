@@ -9,7 +9,7 @@
 ## Introduction
 
 This vignette discusses the basics of the scalable estimation of consideration set models the **ScalableCS** package in Matlab. The background article for it is ["Scalable Estimation of Multinomial Response Models with Random Consideration Sets
-"](https://arxiv.org/pdf/2308.12470).
+"](https://anonymous.4open.science/r/jasa_reproducibility-22DF/manuscript/manuscript.pdf).
 
 
 
