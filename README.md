@@ -74,6 +74,7 @@ where
 
 
 ### The response matrix   
+* The matrix $Y$ contains information on the responses $y_{ijt}$.
 * Suppose $J=4$. The following shows an example of the matrix $Y$:
 
 Alternative | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
