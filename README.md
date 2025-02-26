@@ -22,7 +22,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 # Dimensions
 - $J$ = the number of alternatives (brands, products, etc)
 - $n$ = the number of units (consumers, households, etc)
-- Each unit is observed for $T_i$ periods. nT denotes the summation $\sum_i T_i$.
+- Each unit is observed for $T_i$ periods. $nT$ denotes the summation $\sum_i T_i$.
 - $dx$ = the number of covariates with fixed effects/slopes
 - $dz$ = the number of covariates with random effects/slopes
 
