@@ -46,7 +46,11 @@ $$
  V_{ijt}=\delta_j+\beta x_{ijt}+b_i z_{ijt},
 $$
 
-where $\beta$ is a vector of fixed effects/slopes, $b_i\sim N(0, D)$ is a vector of random effects, and $x_{ijt}$ and $z_{ijt}$ are observed covariates,$\delta_j$ is the alternative fixed effect. 
+where 
+- $\beta$ is a vector of fixed effects/slopes,
+- $b_i\sim N(0, D)$ is a vector of random effects,
+-  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
+-  $\delta_j$ is the alternative fixed effect. 
 
  
 # Data structure
