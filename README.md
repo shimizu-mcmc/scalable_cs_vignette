@@ -56,10 +56,12 @@ where
   
 # Data structure
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
-
 * The dataset should contain two matrices: the response matrix $Y$ ($J$ by $nT$) and the covariate matrix $X$ ($JnT$ by $dx$).
-* 
-* The matrix $X$ contains information on covariates $x_{ijt}$. For example, it may include price, display, and feature ($dx=3$). The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
+
+### The covariate matrix   
+* The matrix $X$ contains information on covariates $x_{ijt}$.
+* For example, it may include price, display, and feature ($dx=3$).
+* The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
 (i,t) | price | display | feature
 --- | --- | --- | --- 
