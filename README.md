@@ -32,7 +32,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
   
 * Let $y_{ijt}$ be an indicator that equals one if the unit $i$'s response at time $t$ is $j$.
 
-* For each unit $i$, its latent consideration set $\mathcal{C_i}$ is a subset of the collection $\{1,...,J\}$.
+* For each unit $i$, its latent consideration set $\mathcal{C_i}$ is a subset of the collection $\\{1,...,J\\}$.
   
 
 $$
