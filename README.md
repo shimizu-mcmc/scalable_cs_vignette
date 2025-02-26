@@ -46,6 +46,7 @@ where
 - $b_i\sim N(0, D)$ is a vector of random effects,
 -  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
 -  $\delta_j$ is the alternative fixed effect (by default, $\delta_J$ is normalized to zero).
+-  Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
 
 ### Distribution of consideration sets
 
@@ -66,15 +67,21 @@ where
 
 Unit | Time | Alternative | price | display | feature
 --- | --- | --- | ---  | --- | --- 
-1 | 1 | 1 | 283 | 0   | 0 | 
-1 | 1 | 2 | 283 | 0   | 0 |  
-1 | 1 | 3 | 283 | 1   | 1 |  
-1 | 2 | 1 | 283 | 1   | 0 |  
-1 | 2 | 2 | 283 | 0   | 1 | 
-1 | 2 | 3 | 283 | 0   | 0 | 
-1 | 3 | 1 | 283 | 0   | 0 | 
-1 | 3 | 2 | 283 | 1   | 0 | 
-1 | 3 | 3 | 283 | 0   | 0 | 
+1 | 1 | 1 | 2.2 | 0   | 0 | 
+1 | 1 | 2 | 3.1 | 0   | 0 |  
+1 | 1 | 3 | 1.5 | 1   | 1 |  
+1 | 2 | 1 | 2.3 | 1   | 0 |  
+1 | 2 | 2 | 3.0 | 0   | 1 | 
+1 | 2 | 3 | 1.6 | 0   | 0 | 
+1 | 3 | 1 | 2.3 | 0   | 0 | 
+1 | 3 | 2 | 3.3 | 1   | 0 | 
+1 | 3 | 3 | 1.4 | 0   | 0 | 
+2 | 1 | 1 | 2.5 | 0   | 0 | 
+2 | 1 | 2 | 3.1 | 0   | 0 |  
+2 | 1 | 3 | 1.5 | 1   | 1 |  
+2 | 2 | 1 | 2.6 | 1   | 0 |  
+2 | 2 | 2 | 3.0 | 0   | 1 | 
+2 | 2 | 3 | 1.6 | 0   | 0 | 
 : | : | : | :  | :  | :  
 
 
@@ -82,7 +89,7 @@ Unit | Time | Alternative | price | display | feature
 * The matrix $Y$ contains information on the responses $y_{ijt}$.
 *  The following shows an example of the matrix $Y$:
 
-Alternative | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
+Alternative | unit 1| unit 1 | unit 1 | unit 2 | unit 2 
 --- | --- | --- | --- | --- | --- 
 Alternative | period 1 | period 2 | period 3 | period 1 | period 2
 1 | 0 | 1 | 1   | 0 | 0 
