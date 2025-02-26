@@ -52,6 +52,7 @@ where
 -  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
 -  $\delta_j$ is the alternative fixed effect. 
 
+* The consideration sets are random objects and follow an unknown distribution $\pi$.
  
 # Data structure
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
