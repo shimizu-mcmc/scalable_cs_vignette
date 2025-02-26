@@ -73,7 +73,17 @@ where
 : | : | : | :  
 
 
+### The response matrix   
+* Suppose $J=4$. The following shows an example of the matrix $Y$:
 
+Alternative | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
+--- | --- | --- | --- | --- | --- 
+1 | 301 | 283 | 290   | 283 | 290 
+2 | 301 | 283 | 290   | 283 | 290 
+3 | 301 | 283 | 290   | 283 | 290 
+4 | 301 | 283 | 290   | 283 | 290 
+
+ 
 
 
 
