@@ -76,7 +76,7 @@ where
 ### The response matrix   
 * Suppose $J=4$. The following shows an example of the matrix $Y$:
 
- | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
+Alternative | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
 --- | --- | --- | --- | --- | --- 
 Alternative | period 1 | period 2 | period 3 | period 1 | period 2
 1 | 301 | 283 | 290   | 283 | 290 
