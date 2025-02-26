@@ -61,21 +61,25 @@ where
 ### The covariate matrix   
 * The matrix $X$ contains information on covariates $x_{ijt}$.
 * For example, it may include price, display, and feature ($dx=3$).
-* The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
+* Suppose $J=3$. The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
 
-(i,t) | price | display | feature
---- | --- | --- | --- 
-(1,1) | 301 | 283 | 290  
-(1,2) | 301 | 283 | 290  
-(1,3) | 301 | 283 | 290  
-(2,1) | 301 | 283 | 290  
-(2,2) | 301 | 283 | 290  
-: | : | : | :  
+Alternative | Time | price | display | feature
+--- | --- | --- | ---  | --- 
+1 | 1 | 283 | 290   | --- 
+2 | 1 | 283 | 290   | --- 
+3 | 1 | 283 | 290   | --- 
+1 | 2 | 283 | 290   | --- 
+2 | 2 | 283 | 290   | --- 
+3 | 2 | 283 | 290   | --- 
+1 | 3 | 283 | 290   | --- 
+2 | 3 | 283 | 290   | --- 
+3 | 3 | 283 | 290   | --- 
+: | : | : | :  | :  
 
 
 ### The response matrix   
 * The matrix $Y$ contains information on the responses $y_{ijt}$.
-* Suppose $J=4$. The following shows an example of the matrix $Y$:
+*  The following shows an example of the matrix $Y$:
 
 Alternative | unit 1| unit 1 | unit 1 | unit 1 | unit 1 
 --- | --- | --- | --- | --- | --- 
@@ -83,7 +87,6 @@ Alternative | period 1 | period 2 | period 3 | period 1 | period 2
 1 | 0 | 1 | 1   | 0 | 0 
 2 | 1 | 0 | 0   | 0 | 1 
 3 | 0 | 0 | 0   | 1 | 0 
-4 | 0 | 0 | 0   | 0 | 0 
 
 * Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
 * Unit 2 chose 3 in period 1 and 2 in period 2. 
