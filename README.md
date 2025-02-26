@@ -26,6 +26,19 @@ This vignette discusses the basics of the scalable estimation of consideration s
 - $dx$ = the number of covariates with fixed effects/slopes.
 - $dz$ = the number of covariates with random effects/slopes.
 
+# The model 
+* The conditional model given latent consideration sets is the canonical multinomial logit model with $J$ alternatives.
+* Let $y_{ijt}$ be an indicator that equals one if the unit $i$'s response at time $t$ is $j$. 
+$$
+ Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
+$$
+
+where
+
+$$
+ V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt},
+$$
+
   
 # Data structure
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
