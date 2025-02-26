@@ -84,7 +84,8 @@ Alternative | period 1 | period 2 | period 3 | period 1 | period 2
 3 | 0 | 0 | 0   | 1 | 0 
 4 | 0 | 0 | 0   | 0 | 0 
 
- 
+* Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
+* Unit 2 chose 3 in period 1 and 2 in period 2. 
 
 
 
