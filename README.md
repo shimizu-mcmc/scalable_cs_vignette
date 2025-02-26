@@ -1,5 +1,7 @@
 # Getting Started with the ScalableCS Package
 
+[comment]: <> (in  the output file unless you use it in)
+
 [comment]: <### Kenichi Shimizu>
 
 [comment]: <>### 2025-02-06
