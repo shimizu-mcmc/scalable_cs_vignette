@@ -45,7 +45,7 @@ where
 - $\beta$ is a vector of fixed effects/slopes,
 - $b_i\sim N(0, D)$ is a vector of random effects,
 -  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
--  $\delta_j$ is the alternative fixed effect. 
+-  $\delta_j$ is the alternative fixed effect (one of them is normalized to zero).
 
 ### Distribution of consideration sets
 
