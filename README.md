@@ -61,7 +61,8 @@ where
 ### The covariate matrix   
 * The matrix $X$ contains information on covariates $x_{ijt}$.
 * For example, it may include price, display, and feature ($dx=3$).
-* Suppose $J=3$. The following shows an example here the first unit is observed for three periods and the second unit is observed for two periods:
+* Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
+* The following shows an example of the matrix $X$:
 
 Unit | Time | Alternative | price | display | feature
 --- | --- | --- | ---  | --- | --- 
