@@ -32,18 +32,9 @@ This vignette discusses the basics of the scalable estimation of consideration s
   
 * Let $y_{ijt}$ be an indicator that equals one if the unit $i$'s response at time $t$ is $j$.
 
-* For each unit $i$, its latent consideration set $\mathcal{C_i}$ is a subset of the collection $\\{1,...,J \\}$.
+* For each unit $i$, its latent consideration set $\mathcal{C_i}$ is a subset of the collection $\\{ 1,...,J \\}$.
   
-* The response probability given that $\mathcal{C_i}=c$ is 
-$$
- Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
-$$
 
-where
-
-$$
- V_{ijt}=\delta_j^{\ast}+\beta^{\ast}x_{ijt},
-$$
 
   
 # Data structure
