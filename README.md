@@ -1,8 +1,8 @@
 # Getting Started with the ScalableCS Package
 
-### Kenichi Shimizu
+[comment]: <>### Kenichi Shimizu
 
-### 2025-02-06
+[comment]: <>### 2025-02-06
 
 
  
