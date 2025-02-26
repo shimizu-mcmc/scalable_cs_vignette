@@ -59,10 +59,24 @@ where
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 * The dataset should contain two matrices: the response matrix $Y$ ($J$ by $nT$) and the covariate matrix $X$ ($JnT$ by $dx$).
 
+### The response matrix   
+* The matrix $Y$ contains information on the responses $y_{ijt}$.
+* Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
+*  The following shows an example of the matrix $Y$:
+
+Alternative | unit 1| unit 1 | unit 1 | unit 2 | unit 2 
+--- | --- | --- | --- | --- | --- 
+Alternative | period 1 | period 2 | period 3 | period 1 | period 2
+1 | 0 | 1 | 1   | 0 | 0 
+2 | 1 | 0 | 0   | 0 | 1 
+3 | 0 | 0 | 0   | 1 | 0 
+
+* Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
+* Unit 2 chose 3 in period 1 and 2 in period 2.
+  
 ### The covariate matrix   
 * The matrix $X$ contains information on covariates $x_{ijt}$.
 * For example, it may include price, display, and feature ($dx=3$).
-* Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
 * The following shows an example of the matrix $X$:
 
 Unit | Time | Alternative | price | display | feature
@@ -85,19 +99,7 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-### The response matrix   
-* The matrix $Y$ contains information on the responses $y_{ijt}$.
-*  The following shows an example of the matrix $Y$:
 
-Alternative | unit 1| unit 1 | unit 1 | unit 2 | unit 2 
---- | --- | --- | --- | --- | --- 
-Alternative | period 1 | period 2 | period 3 | period 1 | period 2
-1 | 0 | 1 | 1   | 0 | 0 
-2 | 1 | 0 | 0   | 0 | 1 
-3 | 0 | 0 | 0   | 1 | 0 
-
-* Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
-* Unit 2 chose 3 in period 1 and 2 in period 2. 
 
 
 
