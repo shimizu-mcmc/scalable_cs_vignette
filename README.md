@@ -36,6 +36,11 @@ This vignette discusses the basics of the scalable estimation of consideration s
   
 * The response probability given that $\mathcal{C_i}=c$ is 
 
+$$
+ Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
+$$
+
+
   
 # Data structure
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
