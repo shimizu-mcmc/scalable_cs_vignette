@@ -36,7 +36,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
   
 * The response probability given that $\mathcal{C_i}=c$ is 
 $$
- Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}}, j=1,...,J,
+ Pr(y_{ijt}=1 \vert \mathcal{C_i}= c )=\frac{V_{ijt}}{\sum_{\ell \in c} V_{i \ell t}},
 $$
 
 where
