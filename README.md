@@ -64,12 +64,12 @@ where
 * Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
 *  The following shows an example of the matrix $Y$:
 
-Alternative | unit 1| unit 1 | unit 1 | unit 2 | unit 2 
---- | --- | --- | --- | --- | --- 
-Alternative | period 1 | period 2 | period 3 | period 1 | period 2
-1 | 0 | 1 | 1   | 0 | 0 
-2 | 1 | 0 | 0   | 0 | 1 
-3 | 0 | 0 | 0   | 1 | 0 
+Unit | Time | Alternative 
+--- | --- | --- 
+1 | 1 | 1 | 2.2 
+
+
+
 
 * Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
 * Unit 2 chose 3 in period 1 and 2 in period 2.
