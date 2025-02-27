@@ -15,14 +15,14 @@ This vignette discusses the basics of the scalable estimation of consideration s
 * The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives. 
 * The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sesitivity with respect to covariates. 
 
-# Dimensions
+## Dimensions
 - $J$ = the number of alternatives (brands, products, etc).
 - $n$ = the number of units (consumers, households, etc).
 - Each unit is observed for $T_i$ periods. $nT$ denotes the summation $\sum_i T_i$.
 - $dx$ = the number of covariates with fixed effects/slopes.
 - $dz$ = the number of covariates with random effects/slopes.
 
-# The model 
+## The model 
 
 ### The conditional model given latent consideration sets 
 
@@ -55,7 +55,7 @@ where
 * Our method offers a scalable approach. 
 
   
-# Data structure
+## Data structure
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 * The dataset should contain two matrices: the response matrix $Y$ ($J$ by $nT$) and the covariate matrix $X$ ($JnT$ by $dx$).
 
@@ -74,10 +74,6 @@ Unit | Time | Response
 
 * In this table, we see that unit 1's responses were 2, 1, and 2; those for unit 2 were 2 and 3.
 
-
-
-* Unit 1 chose 2 in period 1, then 1 in the second period, and 1 in the last period.
-* Unit 2 chose 3 in period 1 and 2 in period 2.
   
 ### The covariate matrix   
 * The matrix $X$ contains information on covariates $x_{ijt}$.
@@ -104,7 +100,11 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-
+## Demonstration
+* This is a synthetic data of smaller scale of the actual data set considered in the paper.
+* It is a panel data consisting of 162 households's purchases of cereal purchases from 13 brands.
+* On average, there are 13 periods of observation for each household. 
+* The data also contains information on price of the brands at each of the purchasing occations.
 
 
 
