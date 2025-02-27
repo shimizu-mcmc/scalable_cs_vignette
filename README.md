@@ -64,9 +64,12 @@ where
 * Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
 *  The following shows an example of the matrix $Y$:
 
-Unit | Time | Alternative 
+Unit | Time | Response 
 --- | --- | --- 
-1 | 1 | 1 | 2.2 
+ 1 | 1 | 2
+ 1 | 2 | 1
+ 1 | 3 | 2
+ 2 | 1 | 2
 
 
 
