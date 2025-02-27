@@ -100,9 +100,10 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-## Demonstration
+## Demonstration: An analysis on cereal purchase data
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
-* It is a panel data consisting of 162 households's purchases of cereal purchases from 13 brands.
+* It is a panel data consisting of 162 households's purchases from 13 cereal brands.
+* In each period, household's purchased brand is recorded.
 * On average, there are 13 periods of observation for each household. 
 * The data also contains information on price of the brands at each of the purchasing occations.
 
