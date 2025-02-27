@@ -105,7 +105,7 @@ Unit | Time | Alternative | price | display | feature
 * It is a panel data consisting of $n=162$ households's purchases from $J=13$ cereal brands (in the application in the paper, $n=1880,J=101$).
 * In each period, household's purchased brand is recorded.
 * On average, there are 13 periods of observation for each household. 
-* The data also contains information on price of the brands at each of the purchasing occations.
+* The data also contains information on price of the brands at each of the purchasing occations ($dx=1$) for which a random effect is considered ($dz=1$).
 
 
 
