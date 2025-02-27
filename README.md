@@ -27,7 +27,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 ### The conditional model given latent consideration sets 
 
 * This is the canonical multinomial logit model with $J$ alternatives.
-* Let $y_{ijt}$ be an indicator that equals one if the unit $i$'s response at time $t$ is $j$.
+* Let $y_{ijt}$ be an indicator that equals one if the response of unit $i$ at time $t$ is $j$.
 * For each unit $i$, its latent consideration set $\mathcal{C_i}$ is a subset of the collection $\\{ 1,...,J \\}$.
 * The response probability given that $\mathcal{C_i}=c$ is 
 
