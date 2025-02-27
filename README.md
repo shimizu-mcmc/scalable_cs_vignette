@@ -71,7 +71,7 @@ Unit | Time | Response
  1 | 3 | 2
  2 | 1 | 2
  2 | 2 | 3
-
+: | : | : 
 * In this table, we see that unit 1's responses were 2, 1, and 2; those for unit 2 were 2 and 3.
 
   
