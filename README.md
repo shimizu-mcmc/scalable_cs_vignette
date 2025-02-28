@@ -24,7 +24,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 ## The model 
 
-### The conditional model given latent consideration sets 
+### 1. The conditional model given latent consideration sets 
 
 * This is the canonical multinomial logit model with $J$ alternatives.
 * Let $y_{ijt}$ be an indicator that equals one if the response of unit $i$ at time $t$ is $j$.
@@ -48,7 +48,7 @@ where
 -  $\delta_j$ is the alternative fixed effect (by default, $\delta_J$ is normalized to zero).
 -  Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
 
-### Distribution of consideration sets
+### 2. Distribution of consideration sets
 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
 * Note that its support has $2^{J}-1$ points, which exponentially increases in $J$. A direct estimation based on simulated MLE or MCMC faces a curse of dimensionality. 
