@@ -112,6 +112,12 @@ Unit | Time | Alternative | price | display | feature
 ## Implementation
 ![title](Figures/implement.png)
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 ## Parameter estimates
 ![title](Figures/beta_sqrtD.png)
 ![title](Figures/delta.png)
