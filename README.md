@@ -111,6 +111,7 @@ Unit | Time | Alternative | price | display | feature
 
 ### Results
 
+![title](Figures/similarity_matrix.png)
 
 
 
