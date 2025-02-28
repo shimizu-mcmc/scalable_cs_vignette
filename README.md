@@ -124,13 +124,7 @@ Unit | Time | Alternative | price | display | feature
 ![title](Figures/sensitivity.png)
 
 
-* To do next
-  + Reduce n in the replication data (n=100)
-  + Estimate the model.
-  + Show the following
-    - Posterior means, INEF
-    - Similarity matrix
-    - Elasticity (under MNL_RC and MNL_R)
+
   
 
 
