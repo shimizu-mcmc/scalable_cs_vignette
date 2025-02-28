@@ -111,6 +111,11 @@ Unit | Time | Alternative | price | display | feature
 
 ### Results
 
+## Parameter estimates
+![title](Figures/beta_sqrtD.png)
+![title](Figures/delta.png)
+
+
 ## Latent grouping structure 
 ![title](Figures/similarity_matrix.png)
 
