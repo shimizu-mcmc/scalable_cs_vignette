@@ -110,7 +110,6 @@ Unit | Time | Alternative | price | display | feature
 * Let's run MCMC (Markov Chain Monte Carlo) for 1000 iterations.
 
 ## Implementation
-![title](Figures/implement.png)
 
 ```
 YData = readtable('myDataDemonstration/YData_DEMO.txt');
