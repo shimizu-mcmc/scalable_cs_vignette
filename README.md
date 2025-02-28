@@ -124,7 +124,7 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 ## Latent grouping structure 
 ![title](Figures/SimilarityMatrix.png)
-<img src="Figures/SimilarityMatrix.png" width="200">
+<img src="Figures/SimilarityMatrix.png" width="800">
 
 ## Price sensitivity
 ![title](Figures/sensitivity.png)
