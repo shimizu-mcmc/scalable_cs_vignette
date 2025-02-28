@@ -110,6 +110,7 @@ Unit | Time | Alternative | price | display | feature
 * Let's run MCMC (Markov Chain Monte Carlo) for 1000 iterations.
 
 ### Results
+![title](Figures/implement.png)
 
 ## Parameter estimates
 ![title](Figures/beta_sqrtD.png)
