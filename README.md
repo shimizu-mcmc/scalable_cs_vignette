@@ -113,9 +113,9 @@ Unit | Time | Alternative | price | display | feature
 ![title](Figures/implement.png)
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+YData = readtable('myDataDemonstration/YData_DEMO.txt');
+XData = readtable('myDataDemonstration/XData_DEMO.txt');
+[meanPara,sdPara,lbPara,ubPara,inefPara,estC,SimilarityMatrix,aggOwnElas]=scalableCS(YData,XData,2000,"MNL_RC");
 ```
 
 ## Parameter estimates
