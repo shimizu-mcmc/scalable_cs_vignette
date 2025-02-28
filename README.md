@@ -111,8 +111,11 @@ Unit | Time | Alternative | price | display | feature
 
 ### Results
 
+## Latent grouping structure 
 ![title](Figures/similarity_matrix.png)
 
+## Price sensitivity
+![title](Figures/sensitivity.png)
 
 
 * To do next
