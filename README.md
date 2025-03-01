@@ -140,6 +140,10 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 <img src="Figures/SimilarityMatrix.png" width="500">
 
 ## Price sensitivity
+* The code provides sensitivity measure of demand with respect to a covaraite, in this case, price.
+* It is an estimated % decrease in demand of brand $j$ when its own price increases by 1 %.
+* This is the absolute value of price elasiticity of demand.
+* Demand in this market is elastic, meaning that for all brands, the sensitivity is greater than 1 %.
 ![title](Figures/sensitivity.png)
 
 
