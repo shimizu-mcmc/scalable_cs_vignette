@@ -23,7 +23,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 3. [Demonstration](#demo)
 
 
-## The model <a name="model" /> 
+## 1. The model <a name="model" /> 
 The hierarchical model has two main stages: (1) the response model conditional on latent consideration sets and (2) the model for consideration sets.
 
 ### Dimensions
@@ -33,7 +33,7 @@ The hierarchical model has two main stages: (1) the response model conditional o
 - $dx$ = the number of covariates with fixed effects/slopes.
 - $dz$ = the number of covariates with random effects/slopes.
   
-### 1. The conditional response model given consideration sets 
+### (1) The conditional response model given consideration sets 
 
 * This is the canonical multinomial logit model with $J$ alternatives.
 * Let $y_{ijt}$ be an indicator that equals one if the response of unit $i$ at time $t$ is $j$.
@@ -58,7 +58,7 @@ where
 * Inclusion of $\delta_j$ and $b_i$ is optional.  
 * Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
 
-### 2. Distribution of consideration sets
+### (2) Distribution of consideration sets
 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
 * Note that its support has $2^{J}-1$ points, which exponentially increases in $J$. A direct estimation based on simulated MLE or MCMC faces a curse of dimensionality. 
@@ -70,7 +70,7 @@ where
 *  See the paper for full detail.
 
   
-## Data structure <a name="data" /> 
+## 2. Data structure <a name="data" /> 
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 * The dataset should contain two matrices: the response matrix $Y$ and the covariate matrix $X$.
 
@@ -117,7 +117,7 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-# Demonstration: An analysis on cereal purchase data <a name="demo" /> 
+# 3. Demonstration: An analysis on cereal purchase data <a name="demo" /> 
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
 * It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
 * In each period, household's purchased brand is recorded.
