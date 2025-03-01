@@ -124,9 +124,11 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 ## Parameter estimates
 * As expected, the slope on price is negative and its 95% credible interval does not include zero.
-* Also, it provides significant evidence of dispersion in the random coefficients.
+* Also, we see significant evidence of dispersion in the random coefficients.
   
 ![title](Figures/beta_sqrtD.png)
+
+* The estimated brand fixed-effects are presented below. 
 ![title](Figures/delta.png)
 
 
