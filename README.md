@@ -17,7 +17,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 * The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sensitivity with respect to covariates. 
 
 
-# Table of contents
+## Table of contents
 1. [The model](#model)
 2. [Data structure](#data)
 3. [Demonstration](#demo)
