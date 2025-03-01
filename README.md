@@ -22,9 +22,9 @@ This vignette discusses the basics of the scalable estimation of consideration s
 - $dz$ = the number of covariates with random effects/slopes.
 
 ## The model 
-* The hierarchical model has two main stages: (1) the response model conditional on consideration sets and (2) the model for consideration sets.
+* The hierarchical model has two main stages: (1) the response model conditional on latent consideration sets and (2) the model for consideration sets.
   
-### 1. The conditional model given latent consideration sets 
+### 1. The conditional response model given consideration sets 
 
 * This is the canonical multinomial logit model with $J$ alternatives.
 * Let $y_{ijt}$ be an indicator that equals one if the response of unit $i$ at time $t$ is $j$.
