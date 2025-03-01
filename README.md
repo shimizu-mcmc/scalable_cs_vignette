@@ -19,7 +19,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 # Table of contents
 1. [The model](#model)
-2. [Data Structure](#data)
+2. [Data structure](#data)
 3. [Demonstration](#demo)
 
 
