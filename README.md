@@ -128,7 +128,8 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
   
 ![title](Figures/beta_sqrtD.png)
 
-* The estimated brand fixed-effects are presented below. 
+* The estimated fixed-effects for 50 brands are presented below.
+* Note that the last one is normalized to zero for identification purpose. 
 ![title](Figures/delta.png)
 
 
