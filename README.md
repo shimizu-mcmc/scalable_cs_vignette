@@ -124,9 +124,12 @@ Unit | Time | Alternative | price | display | feature
 * On average, there are 13 periods of observation for each household. 
 * The data also contains information on price of the brands at each of the purchasing occasions ($dx=1$) for which a random effect is considered ($dz=1$).
 
-* Let's run MCMC (Markov Chain Monte Carlo) for 2000 iterations.
 
 ## Implementation
+* The synthetic ```YData``` and ```XData``` can be loaded in the accompanying folder.
+* Let's run MCMC (Markov Chain Monte Carlo) for 2000 iterations
+*  ```MNL_RC``` option, or the multinomial logit model with random effects and consideration sets, is chosen.
+
 
 ```
 YData = readtable('myDataDemonstration/YData_DEMO.txt');
