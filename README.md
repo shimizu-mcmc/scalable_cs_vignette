@@ -18,10 +18,9 @@ This vignette discusses the basics of the scalable estimation of consideration s
 
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [The model](#model)
-3. [Data Structure](#data)
-4. [Demonstration](#demo)
+1. [The model](#model)
+2. [Data Structure](#data)
+3. [Demonstration](#demo)
 
 
 ## The model <a name="model" /> 
@@ -71,7 +70,7 @@ where
 *  See the paper for full detail.
 
   
-## Data structure <a name="subparagraph1"></data>
+## Data structure <a name="data" /> 
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 * The dataset should contain two matrices: the response matrix $Y$ and the covariate matrix $X$.
 
@@ -118,7 +117,7 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-# Demonstration: An analysis on cereal purchase data <a name="subparagraph1"></demo>
+# Demonstration: An analysis on cereal purchase data <a name="demo" /> 
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
 * It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
 * In each period, household's purchased brand is recorded.
