@@ -50,7 +50,6 @@ where
 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
 * Note that its support has $2^{J}-1$ points, which exponentially increases in $J$. A direct estimation based on simulated MLE or MCMC faces a curse of dimensionality. 
-* Our method offers a scalable approach.
 
 #### Infinite mixture of independent consideration models  
 *  Our approach achieves a scalable estimation while maintaining flexible dependence of consideration across alternatives through **infinite mixture of independent consideration models**.
