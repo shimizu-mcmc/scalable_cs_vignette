@@ -4,8 +4,6 @@
 
 [comment]: <> (### 2025-02-06)
 
-
- 
 ## Introduction
 
 This vignette discusses the basics of the scalable estimation of consideration set models the **ScalableCS** package in Matlab. The background article for it is ["Scalable Estimation of Multinomial Response Models with Random Consideration Sets
@@ -107,7 +105,7 @@ Unit | Time | Alternative | price | display | feature
 * On average, there are 13 periods of observation for each household. 
 * The data also contains information on price of the brands at each of the purchasing occations ($dx=1$) for which a random effect is considered ($dz=1$).
 
-* Let's run MCMC (Markov Chain Monte Carlo) for 1000 iterations.
+* Let's run MCMC (Markov Chain Monte Carlo) for 2000 iterations.
 
 ## Implementation
 
@@ -123,6 +121,8 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 
 ## Latent grouping structure 
+* The code produces a $n$ by $n$ matrix of posterior probabilities that a given pair of units (households) are in a same latent group that shares consideration probabilities.
+* Darker the color is, higher the probability is. 
 <img src="Figures/SimilarityMatrix.png" width="500">
 
 ## Price sensitivity
