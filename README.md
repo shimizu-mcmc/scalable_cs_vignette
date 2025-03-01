@@ -7,23 +7,11 @@
 
 # Table of contents
 1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+2. [The model](#model)
+3. [Data Structure](#data)
+4. [Data Structure](#demo)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
-## Introduction
 
 This vignette discusses the basics of the scalable estimation of consideration set models the **ScalableCS** package in Matlab. The background article for it is ["Scalable Estimation of Multinomial Response Models with Random Consideration Sets
 "](https://anonymous.4open.science/r/jasa_reproducibility-22DF/manuscript/manuscript.pdf).
@@ -40,7 +28,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 - $dx$ = the number of covariates with fixed effects/slopes.
 - $dz$ = the number of covariates with random effects/slopes.
 
-## The model 
+## The model <a name="paragraph1"></model>
 The hierarchical model has two main stages: (1) the response model conditional on latent consideration sets and (2) the model for consideration sets.
   
 ### 1. The conditional response model given consideration sets 
@@ -80,7 +68,7 @@ where
 *  See the paper for full detail.
 
   
-## Data structure
+## Data structure <a name="subparagraph1"></data>
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
 * The dataset should contain two matrices: the response matrix $Y$ and the covariate matrix $X$.
 
@@ -127,7 +115,7 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 
-# Demonstration: An analysis on cereal purchase data
+# Demonstration: An analysis on cereal purchase data <a name="subparagraph1"></demo>
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
 * It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
 * In each period, household's purchased brand is recorded.
