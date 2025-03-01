@@ -45,7 +45,7 @@ where
 *  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
 *  $\delta_j$ is the alternative fixed effect (by default, $\delta_J$ is normalized to zero).
 * Inclusion of $\delta_j$ and $b_i$ is optional.  
--  Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
+* Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
 
 ### 2. Distribution of consideration sets
 
