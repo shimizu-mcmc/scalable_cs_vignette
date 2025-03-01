@@ -121,6 +121,7 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 
 ## Latent grouping structure 
+* Our approach achieves a scalable estimation while maintaining flexible dependence of consideration across alternatives through **infinite mixture of independent consideration models**.
 * The code produces a $n$ by $n$ matrix of posterior probabilities that a given pair of units (households) are in a same latent group that shares consideration probabilities.
 * Darker the color is, higher the probability is. 
 <img src="Figures/SimilarityMatrix.png" width="500">
