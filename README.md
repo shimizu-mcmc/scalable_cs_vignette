@@ -72,7 +72,7 @@ where
   
 ## 2. Data structure <a name="data" /> 
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
-* The dataset should contain two matrices: the response matrix $Y$ and the covariate matrix $X$.
+* The dataset should contain two matrices: the response matrix $Y$ ```YData``` and the covariate matrix $X$.
 
 ### The response matrix   
 * The matrix $Y$ contains information on the responses $y_{ijt}$.
