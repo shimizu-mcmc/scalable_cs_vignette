@@ -12,7 +12,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 * The **ScalableCS** package allows for estimation of multinomial logit model with latent consideration sets.
 * The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives.
 * To do so, the **ScalableCS** package fits **infinite mixture of independent consideration models**. 
-* The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sesitivity with respect to covariates. 
+* The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sensitivity with respect to covariates. 
 
 ## Dimensions
 - $J$ = the number of alternatives (brands, products, etc).
@@ -110,10 +110,10 @@ Unit | Time | Alternative | price | display | feature
 
 # Demonstration: An analysis on cereal purchase data
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
-* It is a panel data consisting of $n=25$ households's purchases from $J=50$ cereal brands (in the application in the paper, we use a larger data set with $n=1880, J=101$).
+* It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
 * In each period, household's purchased brand is recorded.
 * On average, there are 13 periods of observation for each household. 
-* The data also contains information on price of the brands at each of the purchasing occations ($dx=1$) for which a random effect is considered ($dz=1$).
+* The data also contains information on price of the brands at each of the purchasing occasions ($dx=1$) for which a random effect is considered ($dz=1$).
 
 * Let's run MCMC (Markov Chain Monte Carlo) for 2000 iterations.
 
@@ -145,7 +145,7 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 ## Price sensitivity
 * The code provides sensitivity measure of demand with respect to a covariate, in this case, price.
 * It is an estimated % decrease in demand of brand $j$ when its own price increases by 1 %.
-* This is the absolute value of price elasiticity of demand.
+* This is the absolute value of price elasticity of demand.
 * Demand in this market is elastic, meaning that for all brands, the sensitivity is greater than 1 %.
  
 ![title](Figures/sensitivity.png)
