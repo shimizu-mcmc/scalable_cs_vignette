@@ -5,11 +5,6 @@
 [comment]: <> (### 2025-02-06)
 
 
-# Table of contents
-1. [Introduction](#introduction)
-2. [The model](#model)
-3. [Data Structure](#data)
-4. [Data Structure](#demo)
 
 
 
@@ -20,6 +15,14 @@ This vignette discusses the basics of the scalable estimation of consideration s
 * The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives.
 * To do so, the **ScalableCS** package fits **infinite mixture of independent consideration models**. 
 * The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sensitivity with respect to covariates. 
+
+
+# Table of contents
+1. [Introduction](#introduction)
+2. [The model](#model)
+3. [Data Structure](#data)
+4. [Data Structure](#demo)
+
 
 ## Dimensions
 - $J$ = the number of alternatives (brands, products, etc).
