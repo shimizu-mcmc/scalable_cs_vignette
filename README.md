@@ -128,9 +128,7 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 
 ## Latent grouping structure 
-* Our approach **infinite mixture of independent consideration models** groups the units into latent clusters according to their <em>attention probabilities</em>. 
-* Marginally over the mixture components, it is ensured that consideration dependence is flexible. 
-*  See the paper for full detail.
+* Our **infinite mixture of independent consideration models** approach groups the units into latent clusters according to their <em>attention probabilities</em>. 
 * The code produces a $n$ by $n$ matrix of posterior probabilities that a given pair of units (households) are in a same latent group that shares consideration probabilities.
 * Darker the color is, higher the probability is. 
 <img src="Figures/SimilarityMatrix.png" width="500">
