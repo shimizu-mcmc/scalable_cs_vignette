@@ -72,10 +72,10 @@ where
   
 ## 2. Data structure <a name="data" /> 
 * The package requires a certain structure of the dataset. Although it allows a cross-sectional data, a typical dataset is longitudinal(panel).
-* The dataset should contain two matrices: the response matrix $Y$ ```YData``` and the covariate matrix $X$.
+* The dataset should contain two matrices: the response matrix ```YData``` and the covariate matrix ```XData```.
 
 ### The response matrix   
-* The matrix $Y$ contains information on the responses $y_{ijt}$.
+* ```YData``` contains information on the responses $y_{ijt}$.
 * It has $nT$ rows: $T_i$ rows for each unit $i=1,...,n$.
 * Let $J=3$. Suppose that the first unit is observed for three periods and the second unit is observed for two periods.
 *  The following shows an example of the matrix $Y$:
@@ -92,7 +92,7 @@ Unit | Time | Response
 
   
 ### The covariate matrix   
-* The matrix $X$ contains information on covariates $x_{ijt}$.
+* ```XData``` contains information on covariates $x_{ijt}$.
 * It has $JnT$ rows: $JT_i$ rows for each unit $i=1,...,n$.
 * For example, it may include price, display, and feature ($dx=3$).
 * The following shows an example of the matrix $X$:
