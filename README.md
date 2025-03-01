@@ -24,7 +24,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 4. [Demonstration](#demo)
 
 
-## The model <a name="paragraph1"></model>
+## The model <a name="model" /> model
 The hierarchical model has two main stages: (1) the response model conditional on latent consideration sets and (2) the model for consideration sets.
 
 ### Dimensions
