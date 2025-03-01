@@ -21,7 +21,7 @@ This vignette discusses the basics of the scalable estimation of consideration s
 1. [Introduction](#introduction)
 2. [The model](#model)
 3. [Data Structure](#data)
-4. [Data Structure](#demo)
+4. [Demonstration](#demo)
 
 
 ## The model <a name="paragraph1"></model>
