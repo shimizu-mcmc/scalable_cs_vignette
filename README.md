@@ -65,7 +65,7 @@ where
 
 #### Infinite mixture of independent consideration models  
 *  Our approach achieves a scalable estimation while maintaining flexible dependence of consideration across alternatives through **infinite mixture of independent consideration models**.
-* Practically, this amounts to grouping the units into latent groups. In each group, consideration or attention to different products are independent and the <em>attention probabilities</em> are shared among the units.
+* Practically, this amounts to clustering the units into latent group. In each group, consideration or attention to different products are independent and the <em>attention probabilities</em> are shared among the units.
 * Marginally over the latent groups or the mixture components, it is ensured that consideration dependence is flexible. 
 *  See the paper for full detail.
 
