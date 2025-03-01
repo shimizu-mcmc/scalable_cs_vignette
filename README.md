@@ -59,7 +59,7 @@ where
 * Note that the time $t$ is specific to the units. Hence, the first period for unit 1 might be different from the first period for unit 2 in the real time. 
 
 ### (2) Distribution of consideration sets
-
+* This is the main focus of the paper. 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
 * Note that its support has $2^{J}-1$ points, which exponentially increases in $J$. A direct estimation based on simulated MLE or MCMC faces a curse of dimensionality. 
 
