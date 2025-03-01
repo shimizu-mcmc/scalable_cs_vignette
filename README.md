@@ -10,7 +10,8 @@ This vignette discusses the basics of the scalable estimation of consideration s
 "](https://anonymous.4open.science/r/jasa_reproducibility-22DF/manuscript/manuscript.pdf).
 
 * The **ScalableCS** package allows for estimation of multinomial logit model with latent consideration sets.
-* The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives. 
+* The **ScalableCS** package is scalable with respect to the number of alternatives while maintaining flexibility of consideration dependence across alternatives.
+* To do so, the **ScalableCS** package fits **infinite mixture of independent consideration models**. 
 * The **ScalableCS** package can deliver (1) estimated logit parameters, (2) estimated consideration sets, and (3) demand sesitivity with respect to covariates. 
 
 ## Dimensions
