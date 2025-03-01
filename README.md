@@ -50,7 +50,13 @@ where
 
 * The consideration sets are random objects and follow an unknown distribution $\pi$.
 * Note that its support has $2^{J}-1$ points, which exponentially increases in $J$. A direct estimation based on simulated MLE or MCMC faces a curse of dimensionality. 
-* Our method offers a scalable approach. 
+* Our method offers a scalable approach.
+
+#### Infinite mixture of independent consideration models  
+*  Our approach achieves a scalable estimation while maintaining flexible dependence of consideration across alternatives through **infinite mixture of independent consideration models**.
+* Practically, this amounts to grouping the units into latent clusters. In each cluster,  consideration across products are independent and the consideration probabilities are shared among the units.
+* Marginally over the mixture components, it is ensured that consideration dependence is flexible. 
+*  See the paper for full detail.
 
   
 ## Data structure
@@ -122,6 +128,9 @@ XData = readtable('myDataDemonstration/XData_DEMO.txt');
 
 ## Latent grouping structure 
 * Our approach achieves a scalable estimation while maintaining flexible dependence of consideration across alternatives through **infinite mixture of independent consideration models**.
+* Practically, this amounts to grouping the units into latent clusters. In each cluster,  consideration across products are independent and the consideration probabilities are shared among the units.
+* Marginally over the mixture components, it is ensured that consideration dependence is flexible. 
+*  See the paper for full detail.
 * The code produces a $n$ by $n$ matrix of posterior probabilities that a given pair of units (households) are in a same latent group that shares consideration probabilities.
 * Darker the color is, higher the probability is. 
 <img src="Figures/SimilarityMatrix.png" width="500">
