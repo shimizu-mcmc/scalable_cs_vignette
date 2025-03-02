@@ -158,7 +158,7 @@ res=scalableCS(YData,XData,2000,"MNL_RC");
 <img src="Figures/SimilarityMatrix.png" width="500">
 
 ## Price sensitivity
-* The code provides sensitivity measure of demand with respect to a covariate, in this case, price.
+* The code provides sensitivity measure of demand with respect to the first covariate in ```XData```, in this case, price.
 * It is an estimated % decrease in demand of brand $j$ when its own price increases by 1 %.
 * This is the absolute value of price elasticity of demand.
 * Demand in this market is elastic, meaning that for all brands, the sensitivity is greater than 1 %.
