@@ -143,11 +143,13 @@ res=scalableCS(YData,XData,2000,"MNL_RC");
 ## Parameter estimates
 * As expected, the slope on price is negative and its 95% credible interval does not include zero.
 * Also, we see significant evidence of dispersion in the random coefficients.
-* INEF shows the inefficiency factors of the MCMC sample. 
+* INEF shows the inefficiency factors of the MCMC sample.
+  
 ![title](Figures/beta_sqrtD.png)
 
 * The estimated fixed-effects for 50 brands are presented below.
-* Note that the last one is normalized to zero for identification purpose. 
+* Note that the last one is normalized to zero for identification purpose.
+  
 ![title](Figures/delta.png)
 
 
