@@ -132,8 +132,8 @@ Unit | Time | Alternative | price | display | feature
 
 
 ```
-YData = readtable('myDataDemonstration/YData_DEMO.txt');
-XData = readtable('myDataDemonstration/XData_DEMO.txt');
+YData = readtable('YData_DEMO.txt');
+XData = readtable('XData_DEMO.txt');
 res=scalableCS(YData,XData,2000,"MNL_RC");
 ```
 
