@@ -134,13 +134,13 @@ Unit | Time | Alternative | price | display | feature
 ```
 YData = readtable('myDataDemonstration/YData_DEMO.txt');
 XData = readtable('myDataDemonstration/XData_DEMO.txt');
-[meanPara,sdPara,lbPara,ubPara,inefPara,estC,SimilarityMatrix,aggOwnElas]=scalableCS(YData,XData,2000,"MNL_RC");
+res=scalableCS(YData,XData,2000,"MNL_RC");
 ```
 
 ## Parameter estimates
 * As expected, the slope on price is negative and its 95% credible interval does not include zero.
 * Also, we see significant evidence of dispersion in the random coefficients.
-  
+
 ![title](Figures/beta_sqrtD.png)
 
 * The estimated fixed-effects for 50 brands are presented below.
