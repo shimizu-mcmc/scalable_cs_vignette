@@ -20,7 +20,8 @@ This vignette discusses the basics of the scalable estimation of consideration s
 ## Table of contents
 1. [The model](#model)
 2. [Data structure](#data)
-3. [Demonstration](#demo)
+3. [Installation](#install)
+.4 [Demonstration](#demo)
 
 
 ## 1. The model <a name="model" /> 
@@ -116,8 +117,10 @@ Unit | Time | Alternative | price | display | feature
 2 | 2 | 3 | 1.6 | 0   | 0 | 
 : | : | : | :  | :  | :  
 
+## 3. Installation ## <a name="install" /> 
+To use the package ```ScalableCS```, simply download the folder ```ScalableCS```.
 
-## 3. Demonstration: An analysis on cereal purchase data <a name="demo" /> 
+## 4. Demonstration: An analysis on cereal purchase data <a name="demo" /> 
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
 * It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
 * In each period, household's purchased brand is recorded.
