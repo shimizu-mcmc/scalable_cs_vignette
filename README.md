@@ -53,7 +53,7 @@ $$
 
 where 
 * $\beta$ is a vector of fixed effects/slopes,
-* $b_i\sim N(0, D)$ is a vector of random effects,
+* $b_i\sim N(0, D)$ is a vector of random effects (by default, the code puts random effects to all covariates),
 *  $x_{ijt}$ and $z_{ijt}$ are observed covariates,
 *  $\delta_j$ is the alternative fixed effect (by default, $\delta_J$ is normalized to zero).
 * Inclusion of $\delta_j$ and $b_i$ is optional.  
