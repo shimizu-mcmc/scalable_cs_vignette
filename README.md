@@ -118,7 +118,7 @@ Unit | Time | Alternative | price | display | feature
 : | : | : | :  | :  | :  
 
 ## 3. Installation  <a name="install" /> 
-To use the package ```ScalableCS```, simply download the folder ```ScalableCS```.
+To use the package ```ScalableCS```, simply download the folder ```ScalableCS``` and save it locally. 
 
 ## 4. Demonstration: An analysis on cereal purchase data <a name="demo" /> 
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
