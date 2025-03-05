@@ -1,11 +1,13 @@
-% accept_sim is Niter by 1 
-% para_sim is d by Niter
-% scale_constant0 is a scaler
+% This step tunes the hyperparas associated with the MH steps
+% Inputs:
+% accept_sim: Niter by 1 
+% para_sim: d by Niter
+% scale_constant0: a scaler multiplying the cov matrix in the MH proposal
 % tuningMH_Niter is usually 200 - 500
-% Output
-% scale_constant0 (updated)
-% good_acc_rate is 0 or 1 
-% cand_cov0 is d by d 
+% Output: 
+% scale_constant0: an updated scalar multiplying the cov matrix in the MH proposal
+% good_acc_rate: acceptance rate (0 or 1)
+% cand_cov0: d by d covariance matrix in the MH proposal 
 function [scale_constant0,good_acc_rate,cand_cov0]=tuneMH(accept_sim,scale_constant0,tuningMH_Niter,iter,para_sim,cand_cov0)
 
 acc_rate_so_far=mean(accept_sim(iter-tuningMH_Niter+1:iter));

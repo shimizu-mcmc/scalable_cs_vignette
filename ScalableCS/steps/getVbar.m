@@ -1,12 +1,7 @@
 
-% Get V without delta
+% Get the mean utility without delta, the alternative fixed effects
 function Vbar=getVbar(beta,X,b,Z,J,n)
 
-%[J,n]=size(C);
-% V=X*beta;
-% V=reshape(V,J,n);
-% ccp=exp(V).*C;
-% ccp=ccp./sum(ccp);
 if isempty(b)==1
 Vbar=X*beta;
 else 

@@ -1,3 +1,14 @@
+% Random-Walk MH for delta, the alternative fixed effects
+% Inputs: 
+% delta_old: the delta at the previous iter 
+% Vdelta_: the prior variance
+% Vbar: the mean utility (before adding catagory FEs, delta) given beta and b  
+% scale_constant0_delta,cand_cov0_delta: the tuning paras in the MH step 
+% Outputs:
+% beta: the new delta
+% prob: acceptance prob
+% accept: 1 if the proposed value is accepted, zero otherwise
+
 function [delta,prob,accept] = getDelta_RWMH(delta_old,Vdelta_,Vbar,C,data,dim,scale_constant0_delta,cand_cov0_delta)
 J=dim.J;
 Ti=dim.Ti;

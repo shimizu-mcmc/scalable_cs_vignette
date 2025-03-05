@@ -1,4 +1,15 @@
-% Tailored MH
+% Tailored MH for beta, the fixed slopes
+% Inputs: 
+% beta_old: the beta at the previous iter 
+% Vbeta_: the prior variance
+% delta,b,C: other parameters 
+% data,dim: data and dimension structures
+% scale_constant0_beta: the tuning para in the MH step 
+% Outputs:
+% beta: the new beta
+% prob: acceptance prob
+% accept: 1 if the proposed value is accepted, zero otherwise
+
 function [beta,prob,accept] = getBeta_TMH(beta_old,Vbeta_,delta,b,C,data,dim,scale_constant0_beta)
 J=dim.J;
 n=dim.n;
@@ -31,6 +42,7 @@ Sig_hat=inv(-hessLogPost);
 tailerd_old=logmvnpdf(beta_old',beta_hat',Sig_hat);
 tailerd_new=logmvnpdf(beta_new',beta_hat',Sig_hat);
 
+% acceptance prob
 prob=exp(logPost_new+tailerd_old-logPost_old-tailerd_new);
 % prob_beta
 accept=0;

@@ -1,5 +1,17 @@
-% C*_i is J by 1 
-% Update one component after another 
+% MH for consideration sets
+% See Algorithm 1 of the paper for details 
+% Inputs: 
+% C_old: the C at the previous iter 
+% gamma: component-specific attention probs
+% class: cluster allocations 
+% Vbar: the mean utility (before adding catagory FEs, delta) given beta and b  
+% delta: alternative-specific fixed effects
+% data,dim: data and dimension structures
+% Outputs:
+% C: the new C
+% accept: 1 if the proposed value is accepted, zero otherwise
+% diffC_accept: 1 if the proposed value that is different from the old value is accepted, zero otherwise
+
 function [C,accept,diffC_accept]=getC(delta,Vbar,C_old,gamma,class,data,dim)
 J=dim.J;
 n=dim.n;
@@ -14,6 +26,7 @@ M=gamma(:,class);
 accept_mat=zeros(n,J);
 diffC_accepted_mat=zeros(n,J);
 
+% Update one component after another in ramdom order 
 for jj=randperm(J)%1:J
 C_new=C_old;
 C_new(jj,:)=(rand(1,n)<=M(jj,:));

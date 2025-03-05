@@ -1,3 +1,18 @@
+% Updating step for the mixture related parameters
+% Inputs: 
+% C: the current C 
+% class: the current cluster allocations 
+% kMax: the current max num of components
+% aGamma_,bGamma_: hyperparameters for gamma, the component-specific attention probs
+% kappa: the DP concentration para 
+% DepConsid_flag=1 if K=infinity (infinite mixture of indep consid models), =0 if K=1 (indep consid model)
+% dim: the dimension structure
+% Outputs:
+% gamma: the new gamma, the component-specific attention probs
+% class: the new class
+% omega: the new omega, the weights
+% kMax: the new max num of components
+
 function [gamma,class,omega,kMax]=getMixtureParas(C,class,kMax,aGamma_,bGamma_,kappa,dim,DepConsid_flag)
 J=dim.J;
 n=dim.n;

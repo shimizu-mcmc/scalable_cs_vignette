@@ -1,3 +1,14 @@
+% Tailored MH for delta, the alternative fixed effects
+% Inputs: 
+% delta_old: the delta at the previous iter 
+% Vdelta_: the prior variance
+% Vbar: the mean utility (before adding catagory FEs, delta) given beta and b  
+% Outputs:
+% beta: the new delta
+% prob: acceptance prob
+% accept: 1 if the proposed value is accepted, zero otherwise
+
+
 function [delta,prob,accept] = getDelta_TMH(delta_old,Vdelta_,Vbar,Y,C,Ti)
 J=length(delta_old);
 delta=zeros(J,1);

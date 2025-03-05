@@ -1,3 +1,12 @@
+% Random-Walk MH for b, the random-effects
+% Inputs: 
+% b_old: the b at the previous iter 
+% delta,beta,D,C: other parameters 
+% data,dim: data and dimension structures
+% Outputs:
+% b: the new b
+% prob: acceptance prob
+% accept: 1 if the proposed value is accepted, zero otherwise
 function [b,prob,accept] = getB(delta,beta,b_old,D,C,data,dim)
 J=dim.J;
 n=dim.n;
