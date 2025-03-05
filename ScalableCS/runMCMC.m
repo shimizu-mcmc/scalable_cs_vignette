@@ -1,11 +1,42 @@
-%options
-%estimation=1;%=1 MNL, =2 MNL_R, =3 MNL_C, =4 MNL_RC
-%DepConsid_flag=1 if K=infinity, =0 if K=1
-%includeDelta=1 if include delta's (product fixed effects), =0 otherwise
-%deltaTMH_flag=1 if update delta using Tailerd MH (TMH), 0 if Random Walk MH (RWMH)
-%prior_attention_prob=1 if sparsity inducing prior for attention probs "q",=0 if uninformative 
-%kMax is the initial value of the max number of components (=1 if DepConsid_flag==0)
-%slice: every "slice"th MCMC draw of CSs is saved. Too large to save all draws.
+% Author: 
+% Affiliation: 
+% Email:
+% Last updated: March 5, 2025
+
+% The code runs MCMC (Markov Chain Monte Carlo) to estimate the proposed model in
+% "Scalable Estimation of Multinomial Response Models with Random Consideration Sets"
+
+% Inputs: 
+% <Niter> number of MCMC draws
+% <data> the data structure
+% <dim> the dimension structure
+% <options> the option structure 
+% estimation=1 MNL, =2 MNL_R, =3 MNL_C, =4 MNL_RC (see definitions in the paper)
+% DepConsid_flag=1 if K=infinity (infinite mixture of indep consid models), =0 if K=1 (indep consid model)
+% includeDelta=1 if include delta's (alternative fixed effects), =0 otherwise
+% deltaTMH_flag=1 if update delta using Tailerd MH (TMH), 0 if Random Walk MH (RWMH)
+% prior_attention_prob=1 if sparsity inducing prior for attention probs "q",=0 if uninformative 
+% kMax is the initial value of the max number of components (=1 if DepConsid_flag==0)
+% slice: every "slice"th MCMC draw of CSs is saved. Too large to save all draws.
+
+% Outputs: 
+% beta_sim stores MCMC draws of the fixed slope parameters
+% delta_sim stores MCMC draws of the alternative-specific fixed effects (the last one is normalized to zero)
+% accBeta_sim stores MCMC draws of acceptance/rejection of beta at its MH step
+% accDelta_sim stores MCMC draws of acceptance/rejection of delta at its MH step
+% b_sim stores MCMC draws of the random effects
+% accB_sim stores MCMC draws of acceptance/rejection of b at its MH step
+% D_sim stores MCMC draws of the covariance matrix of the random effects
+% C_sim stores (sliced) MCMC draws of consideration sets 
+% accC_sim stores MCMC draws of acceptance/rejection of C at its MH step
+% accDiffC_sim stores MCMC draws of acceptance/rejection of C that is different from the previous iteration
+% gamma_sim stores MCMC draws of the component-specific attention probs
+% class_sim stores MCMC draws of cluster assignment of the units 
+% omega_sim stores MCMC draws of the component-weights 
+% kMax_sim stores MCMC draws of the maximum number of components
+% kUniq_sim stores MCMC draws of the number of non-empty components
+% kappa_sim stores MCMC draws of the DP concentration parameter
+
 function [beta_sim,delta_sim,accBeta_sim,accDelta_sim,...
 b_sim,accB_sim,D_sim,...
 C_sim,accC_sim,accDiffC_sim,...
@@ -29,19 +60,19 @@ gamma_sim,class_sim,omega_sim,kMax_sim,kUniq_sim,kappa_sim]=runMCMC(Niter,data,d
 gamma_sim,class_sim,omega_sim,kMax_sim,kUniq_sim,kappa_sim]=...
 MCMC_define_arrays_to_store_draws(paramHetero,csHetero,J,n,Niter,slice,dx,dz,kGlobalMax,beta,delta,b,D,C,class,gamma,omega,kMax,kappa);
 
-
+% Set information on the tailored MH step for delta
 tuningMH_Niter=200;
 good_acc_rate_delta=0;
 scale_constant0_delta=2.38/sqrt(J-1);
-cand_cov0_delta=0.1*eye(J-1);%initialize the candidate covariance matrix 
+%initialize the candidate covariance matrix 
+cand_cov0_delta=0.1*eye(J-1);
 
-%good_acc_rate_beta=0;
-scale_constant0_beta=1;%2.38/sqrt(length(beta));
+% Set information on the tailored MH step for beta
+scale_constant0_beta=1;
 
 
 % V. Run Markov chain Monte Carlo
 for iter=2:Niter
-   %iter
   if mod(iter,100) == 0
     fprintf('At iteration %d...\n',iter);
   end
