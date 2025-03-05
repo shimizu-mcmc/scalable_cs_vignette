@@ -123,6 +123,7 @@ To use the package ```ScalableCS```, simply download the folder ```ScalableCS```
 ## 4. Demonstration: An analysis on cereal purchase data <a name="demo" /> 
 * This is a synthetic data of smaller scale of the actual data set considered in the paper.
 * It is a panel data consisting of $n=25$ households' purchases from $J=50$ cereal brands (in the empirical application of the paper, we use a larger data set with $n=1880, J=101$).
+* Note that the total number of possible consideration sets is very large: $2^{15}-1=32,767$.
 * In each period, household's purchased brand is recorded.
 * On average, there are 13 periods of observation for each household. 
 * The data also contains information on price of the brands at each of the purchasing occasions ($dx=1$) for which a random effect is considered ($dz=1$).
