@@ -1,4 +1,6 @@
-% Compute consideration sets related objects 
+% The code computes objects related to the estimated clustering structure 
+% It computes the similarity matrix, and estimated consideration sets
+
 % Similarity matrix
 n=dim.n;
 SimilarityMatrix_sim=zeros(n,n,(Niter-Nburnin)/slice);

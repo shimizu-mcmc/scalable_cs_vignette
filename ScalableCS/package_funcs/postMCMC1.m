@@ -1,4 +1,7 @@
-% Compute posterior statistics
+% The code computes posterior statistics such as mean and sd of the
+% parameters as well as computational time and inefficiency factors 
+
+% Discard the firtst 30% of the draws as burn-in sample
 Nburnin=0.3*Niter;
 % Fixed slopes 
 meanBeta=mean(beta_sim(:,Nburnin+1:end));

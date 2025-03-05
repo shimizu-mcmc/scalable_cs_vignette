@@ -1,40 +1,5 @@
-% Compute own elasticity
-% clear
-% rng(123)
-% Niter=5000;
-% estimation=4;%=1 MNL, =2 MNL_R, =3 MNL_C, =4 MNL_RC
-% DepConsid_flag=1;%=1 if dependent consideration 0 otherwise 
-% 
-% if estimation==2 || estimation==4 %MNL_R or MNL_RC
-%     paramHetero=1;
-% else
-%     paramHetero=0;
-% end 
-% if estimation==3 || estimation==4 %MNL_C or MNL_RC
-%     csHetero=1;
-% else
-%     csHetero=0;
-% end 
-% 
-% if estimation==1
-% filename_own=['MNL_Niter' num2str(Niter),'.mat'];
-% elseif estimation==2
-% filename_own=['MNL_R_Niter' num2str(Niter),'.mat'];
-% elseif estimation==3
-%     if DepConsid_flag==1
-%     filename_own=['MNL_C_dep_Niter' num2str(Niter),'.mat'];
-%     elseif DepConsid_flag==0
-%     filename_own=['MNL_C_indep_Niter' num2str(Niter),'.mat'];        
-%     end 
-% elseif estimation==4
-%     if DepConsid_flag==1
-%     filename_own=['MNL_CR_dep_Niter' num2str(Niter),'.mat'];
-%     elseif DepConsid_flag==0
-%     filename_own=['MNL_CR_indep_Niter' num2str(Niter),'.mat'];        
-%     end 
-% end 
-% load(filename_own)
-% 
+% The code computes the sensitivity of demand with respect to price
+
 J=dim.J;
 X=data.X;
 Z=data.Z;
@@ -45,24 +10,7 @@ nT=dim.nT;
 Ti=dim.Ti;
 house=dim.house;
 Nburnin=0.3*Niter;
-% 
-% if csHetero==1
-% C_sim=zeros(J,n,Niter);
-% Howmanysegments=Niter/1000;
-% 
-% finish=(1:Howmanysegments+1-1)*(Niter/Howmanysegments);
-% start=finish-(Niter/Howmanysegments)+1;    
-%     C_sim(:,:,start(1):finish(1))=C_sim1;
-%     C_sim(:,:,start(2):finish(2))=C_sim2;
-%     C_sim(:,:,start(3):finish(3))=C_sim3;
-%     C_sim(:,:,start(4):finish(4))=C_sim4;
-%     C_sim(:,:,start(5):finish(5))=C_sim5;
-%     % C_sim(:,:,start(6):finish(6))=C_sim6;
-%     % C_sim(:,:,start(7):finish(7))=C_sim7;
-%     % C_sim(:,:,start(8):finish(8))=C_sim8;
-%     % C_sim(:,:,start(9):finish(9))=C_sim9;
-%     % C_sim(:,:,start(10):finish(10))=C_sim10;
-% end 
+
 
 
 % Randomly select 100 units to compute elasticity 
