@@ -1,5 +1,16 @@
-% Fixed slope coefficients
+% The code sets the hyperparameters of the prior
+
+% Inputs:
+% paramHetero=1 if include random effects (i.e. parameter heterogeneity)
+% csHetero=1 if incluide consid sets (i.e. CS heterogeneity)
+% prior_attention_prob=1 if sparsity inducing prior for attention probs "q",=0 if uninformative 
+% J Number of alternatives
+% dx Number of covariates with fixed slopes 
+% dz Number of covariates with random slopes 
+
+% Outputs: the hyperparameters in the prior below:
 % beta ~ N(0,Vbeta_)
+% delta ~ N(0,Vdelta_)
 % Random slopes 
 % b ~ N(0,D), invD ~ Wishart(v_,R_)
 % Consideration probabilities 
@@ -11,6 +22,7 @@
 function [Vbeta_,Vdelta_,v_,R_,aGamma_,bGamma_,prior_a,prior_b]=MCMC_set_priors(paramHetero,csHetero,prior_attention_prob,J,dx,dz)
 % beta ~ N(0,Vbeta_)
 Vbeta_=3*eye(dx);
+% delta ~ N(0,Vdelta_)
 Vdelta_=2*ones(J,1);
 if paramHetero==1
     % b ~ N(0,D), invD ~ Wishart(v_,R_)

@@ -1,8 +1,13 @@
-% Initialize parameters
-% Inputs can be recovered from the structures dim,data,options
-% Outputs
-% preference parameters: beta,delta,b,D
-% consideration set parameters: C,class,gamma,omega,kMax,kGlobalMax,kappa
+% The code initializes the parameters
+
+% Inputs:
+% The information in the structures 'dim','data','options'
+% that were recovered by MCMC_recover_information.m 
+
+% Outputs:
+% The initial values of the parameters:
+% (preference parameters) beta,delta,b,D
+% (consideration set parameters) C,class,gamma,omega,kMax,kGlobalMax,kappa
 function [beta,delta,b,D,...
     C,class,gamma,omega,kMax,kGlobalMax,kappa]=MCMC_initialize_params(paramHetero,csHetero,DepConsid_flag,kMax,n,J,dx,dz,Vbeta_,Y,YY,X,XX,Z,Ti,nT,JnT)
 
@@ -17,18 +22,18 @@ if csHetero==1
     kappa=1;% dirichlet process prior parameter        
     v=zeros(kMax,1);
     for k = 1 : kMax
-        v(k)=betarnd(1, kappa, [1 1]);	
+        v(k)=betarnd(1, kappa, [1 1]);%Strick-breaking representation	
     end
     % calculate weights
     omega=zeros(kMax,1);
     for k = 1 : kMax 
-	    omega(k) = v(k)*prod( 1-v(1:k-1) );
+	    omega(k) = v(k)*prod( 1-v(1:k-1) );%Strick-breaking representation	
     end
-    class = ceil(kMax*rand(1, n))';% initialise allocation and hidden state vectors
+    class = ceil(kMax*rand(1, n))';% initialize cluster allocations
     gamma=rand(J,kMax);% initialize the component-spexific consideration probs
 
     C=YY;% Initialize the unit-specific consideration set as the set of responses made by the unit
-elseif csHetero==0
+elseif csHetero==0 
     C=ones(J,n);%All products are in everyone's CS
     class=[];
     gamma=[];
@@ -39,16 +44,15 @@ elseif csHetero==0
 end 
 % 2. Initialize preference parameters
 if paramHetero==1
-    D=1*eye(dz);
-    b=randn(dz,n);
+    D=1*eye(dz);%Covariance matrix of the random effects
+    b=randn(dz,n);%Random effects
 elseif paramHetero==0
     b=[];
     D=[];    
 end  
-delta=zeros(J,1);%ones(J,1)+randn(J,1);%ones(J,1)+randn(J,1);
+delta=zeros(J,1);
 delta(J)=0;
 beta_init=0.1*randn(dx,1);
-%beta=beta_init;
 beta=compBetaPostMode(Y,beta_init,Vbeta_,X,XX,delta,b,Z,C,Ti,nT,JnT,100);
 
 

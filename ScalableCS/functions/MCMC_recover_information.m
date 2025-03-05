@@ -1,4 +1,14 @@
-%Recover selected options, dimensions, and data
+% The code recovers selected options, dimensions, and data
+
+% Inputs:
+% <Niter> number of MCMC draws
+% <data> the data structure
+% <dim> the dimension structure
+% <options> the option structure 
+
+% Outputs:
+% The information in the structures. See the header of runMCMC.m.
+
 function [J,n,Ti,nT,JnT,dx,dz,Y,YY,X,XX,Z,...
     paramHetero,csHetero,DepConsid_flag,includeDelta,deltaTMH_flag,prior_attention_prob,kMax,slice]=MCMC_recover_information(data,dim,options)
 % Recover the selected options 
@@ -23,22 +33,21 @@ else
 end 
 
 % Recover information regarding dimensions
-J=dim.J;
-n=dim.n;
-Ti=dim.Ti;
-%house=dim.house;
-nT=dim.nT;
-JnT=dim.JnT;
-dx=dim.dx;
-dz=dim.dz;
+J=dim.J;%Number of alternatives
+n=dim.n;%Number of units 
+Ti=dim.Ti;%Numbers of unit-specific periods 
+nT=dim.nT;%Sum of Ti's
+JnT=dim.JnT;%J times nT
+dx=dim.dx;%Number of covariates with fixed slopes 
+dz=dim.dz;%Number of covariates with random slopes 
 
 % Recover data
-Y=data.Y;
-YY=data.YY;
-X=data.X;
-XX=data.XX;
+Y=data.Y;%Observed resposes
+YY=data.YY;%Indicators: 1(j was ever chosen by i)
+X=data.X;%Covariates with fixed slopes
+XX=data.XX;%Squares of the X
 %tempZ=data.tempZ;
-Z=data.Z;
+Z=data.Z;%Covariates with random effects 
 
 
 end 

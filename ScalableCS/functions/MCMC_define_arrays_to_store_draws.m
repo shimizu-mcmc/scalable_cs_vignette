@@ -1,11 +1,12 @@
-% Define arrays to save MCMC draws and Store the initial values 
-% Input (1)
-% dimensions 
-% Input (2)
-% Initial values (already defined) of 
-% the preference params: beta,delta,b,D
-% the CS params: C,class,gamma,omega,kMax,kappa
-% Outputs are the arrays to store MCMC draws
+% The code defines arrays to save MCMC draws and Store the initial values
+
+% Inputs:
+% The information in the structures 'dim','data','options' that were recovered by MCMC_recover_information.m 
+% The initial param values set by MCMC_initialize_params.m
+
+% Outputs:
+% Arrays to store MCMC draws
+% The first elements are the given initial values
 function [beta_sim,delta_sim,accBeta_sim,accDelta_sim,...
 b_sim,accB_sim,D_sim,...
 C_sim,accC_sim,accDiffC_sim,...
@@ -17,8 +18,6 @@ gamma_sim,class_sim,omega_sim,kMax_sim,kUniq_sim,kappa_sim]=MCMC_define_arrays_t
 % Save every 'slice"th draw of C
 % Choose slice so that we only keep Niter_sliced draws 
 Niter_sliced=Niter/slice;
-% slice=Niter/Niter_sliced;
-%C_sim=zeros(J,n,Niter);
 C_sim=zeros(J,n,Niter_sliced);
 accC_sim=zeros(n,Niter);
 accDiffC_sim=zeros(n,Niter);
