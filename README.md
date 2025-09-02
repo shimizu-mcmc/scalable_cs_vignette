@@ -126,7 +126,7 @@ To use the package ```ScalableCS```, simply download the folder ```ScalableCS```
 * Note that the total number of possible consideration sets is very large: $2^{15}-1=32,767$, and the traditional direct approach would be infeasible. 
 * In each period, household's purchased brand is recorded.
 * On average, there are 13 periods of observation for each household. 
-* The data also contains information on price of the brands at each of the purchasing occasions ($ dx=1 $) for which a random effect is considered ($dz=1$).
+* The data also contains information on price of the brands at each of the purchasing occasions ($dx=1$) for which a random effect is considered ($dz=1$).
 
 
 ## Implementation
