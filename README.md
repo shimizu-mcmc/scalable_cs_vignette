@@ -8,7 +8,7 @@
 
 
 
-This vignette discusses the basics of the scalable estimation of consideration set models the ```ScalableCS``` package in Matlab. The background article for it is ["Scalable Estimation of Multinomial Response Models with Random Consideration Sets", Journal of the American Statistical Association, by Siddhartha Chib and Kenichi Shimizu](https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2609361).
+This vignette discusses the basics of the scalable estimation of consideration set models the ```ScalableCS``` package in Matlab. The background article for it is ["Scalable Estimation of Multinomial Response Models with Random Consideration Sets"](https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2609361), Journal of the American Statistical Association, by Siddhartha Chib and Kenichi Shimizu.
 
 
 * The ```ScalableCS``` package allows for estimation of the multinomial logit model with latent consideration sets.
